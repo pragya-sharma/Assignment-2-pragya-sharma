@@ -1,10 +1,64 @@
 /*
  *  Created by IntelliJ IDEA.
- *  User: Vaibhav
- *  Date: 23-Mar-20
- *  Time: 7:13 PM
+ *  User: Pragya Sharma
+ *  Date: 28-Mar-20
+ *
  */
 package problem3.node;
 
+import problem5.student.Student;
+
+
 public class Node {
+
+
+    private Student student;
+
+    private Node next;
+
+
+
+    /*
+
+     Constructor
+
+     */
+
+    public Node(Student student) {
+
+        this.student = student;
+
+        next = null;
+
+    }
+
+
+
+    /*
+
+    Getter & Setter methods
+
+     */
+
+    public Student getData() {
+
+        return student;
+
+    }
+
+
+    public Node getNext() {
+
+        return next;
+
+    }
+
+
+    public void setNext(Node next) {
+
+        this.next = next;
+
+    }
+
+
 }
